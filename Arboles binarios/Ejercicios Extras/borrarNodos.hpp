@@ -1,3 +1,5 @@
+#ifndef BORRAR_HPP
+#define BORRAR_HPP
 
 #include "arbol_binario_enlazada.h"
 
@@ -34,3 +36,5 @@ void borrarNodos_rec(typename Abin<T>::nodo n,Abin<T> &Arbol)
             Arbol.eliminarHijoIzqdoB(n);
     }
 }
+
+#endif //BORRAR_HPP

@@ -6,17 +6,6 @@ const int fin = -1;
 bool arbolPalindromo(Abin<char> Arbol);
 
 
-
-
-
-
-
-template<typename T>
-int numNodos(typename Abin<T>::nodo n,Abin<T>& A)
-{
-    return((Abin<T>::NODO_NULO!=A.hijoIzqdoB(n)) + (Abin<T>::NODO_NULO!=A.hijoDrchoB(n)));
-}
-
 int main()
 {
     Abin<char> A1, A2;
