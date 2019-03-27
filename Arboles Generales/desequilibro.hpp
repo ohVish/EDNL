@@ -35,13 +35,16 @@ int alturaMinima(typename Agen<T>::nodo n,Agen<T> &Arbol)
         return -1;
     else
     {
-        alt=altura(n,Arbol);
+
         n=Arbol.hijoIzqdo(n);
+        alt=altura(n,Arbol);
+        
+        while(n!=Agen<T>::NODO_NULO)
         {
-            alt=1+fmin(alturaMinima(n,Arbol),alt);
+            alt=fmin(alturaMinima(n,Arbol),alt);
             n=Arbol.hermDrcho(n);
         }
-        return alt;
+        return alt+1;
     }
 }
 
